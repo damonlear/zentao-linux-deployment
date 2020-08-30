@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<base href='file:\\\C:\Users\damon\Desktop\zentao\'/>
+</head>
+<body>
+<h1>禅道部署手册</h1>
+<h2>一键部署</h2>
+<p><a href="http://www.zentao.net/download.html" title="禅道软件下载地址： http://www.zentao.net/download.html">禅道软件下载地址-&gt;http://www.zentao.net/download.html</a></p>
+<p><a href="https://www.zentao.net/book/zentaopmshelp/90.html" title="禅道安装及升级">禅道安装及升级教程-&gt;https://www.zentao.net/book/zentaopmshelp/90.html</a></p>
+<h3>一、查看对应的linux内核版本并下载对应的tar.gz包</h3>
+<p>查看内核版本</p>
+<pre><code>cat /etc/redhat-release
+</code></pre>
+
+<p>下载Linux一键安装包</p>
+<pre><code>wget https://www.zentao.net/dl/zentao/12.4.1/ZenTaoPMS.12.4.1.zbox_64.tar.gz
+</code></pre>
+
+<p><code>注：Linux一键安装包必须直接解压到/opt目录下。</code></p>
+<p>解压Linux一键安装包</p>
+<pre><code>tar -zxvf ZenTaoPMS.12.4.1.zbox_64.tar.gz -C /opt
+</code></pre>
+
+<h3>二、查看运行</h3>
+<p>修改禅道自带的apache端口</p>
+<pre><code>[root@144 zbox]# ./zbox -ap 7000
+</code></pre>
+
+<p>修改禅道自带的mysql端口：</p>
+<pre><code>[root@144 zbox]# ./zbox -mp 7001
+</code></pre>
+
+<p>启动禅道服务：</p>
+<pre><code>[root@144 zbox]# ./zbox start
+</code></pre>
+
+<p>配置iptables防火墙规则，允许端口访问：</p>
+<pre><code>[root@144 zbox]# iptables -A INPUT -p tcp --dport 7000 -j ACCEPT
+[root@144 zbox]# iptables -A INPUT -p tcp --dport 7001 -j ACCEPT
+
+[root@144 zbox]# service iptables save
+[root@144 zbox]# service iptables restart
+</code></pre>
+
+<p><code>防火墙配置异常问题</code>
+<code>yum install iptables-services</code></p>
+<h3>三、数据库账号</h3>
+<p>创建数据库账号</p>
+<pre><code>    [root@144 zbox]# ./auth/adduser.sh
+</code></pre>
+
+<p>数据库管理及查看</p>
+<p><a href="https://www.jianshu.com/p/d21d6091c10c" title="禅道数据库管理">禅道数据库管理-&gt;https://www.jianshu.com/p/d21d6091c10c</a></p>
+<h3>三、配置</h3>
+<p>禅道开机启动</p>
+<pre><code>chmod +x /etc/rc.local
+vi /etc/rc.local
+i
+/opt/zbox/zbox start
+:wq
+chmod -x /etc/rc.local
+</code></pre>
+
+<h3>四、定制</h3>
+<p>一、修改公司名称</p>
+<pre><code>在“组织视图”-“公司管理” 即可修改公司名称
+</code></pre>
+
+<p>二、修改禅道默认主页</p>
+<p><a href="https://www.zentao.net/book/zentaopmshelp/131.html" title="修改禅道默认登陆页为用户登陆页">修改禅道默认登陆页为用户登陆页-&gt;https://www.zentao.net/book/zentaopmshelp/131.html</a></p>
+<p>三、修改登陆页面logo</p>
+<p><img src="./zt-logo.png" alt="zt-logo.png" /></p>
+<pre><code>cp /home/root/zt-logo.png ./app/zentaopro/www/theme/default/images/main/zt-logo.png 
+cp /home/root/zt-logo.png ./app/zentaoep/www/theme/default/images/main/zt-logo.png 
+cp /home/root/zt-logo.png ./app/zentao/tmp/backup/202008300030218.code/www/theme/default/images/main/zt-logo.png
+cp /home/root/zt-logo.png ./app/zentao/www/theme/default/images/main/zt-logo.png    
+</code></pre>
+
+<p>四、修改主页的禅道专业版本标识及跳转</p>
+<p>关键字</p>
+<pre><code>https://api.zentao.net/goto.php?item=aiux
+https://api.zentao.pm/goto.php?item=aiux
+https://api.zentao.net/goto.php?item=proversion&amp;from=footer
+艾體驗
+艾体验
+</code></pre>
+
+<p>操作</p>
+<pre><code>sed -i &quot;s/查找的内容/替换后的内容/g&quot; `grep -rl &quot;查找的内容&quot; ./`
+
+sed -i &quot;s/https:\/\/api.zentao.pm\/goto.php?item=aiux/替换后的内容/g&quot; `grep -rl &quot;https://api.zentao.pm/goto.php?item=aiux&quot; ./`
+sed -i &quot;s/https:\/\/api.zentao.net\/goto.php?item=proversion&amp;from=footer/替换后的内容/g&quot; `grep -rl &quot;https://api.zentao.net/goto.php?item=proversion&amp;from=footer&quot; ./`
+sed -i &quot;s/艾体验/中创/g&quot; `grep -rl &quot;艾体验&quot; ./`
+sed -i &quot;s/艾體驗/中创/g&quot; `grep -rl &quot;艾體驗&quot; ./`
+</code></pre>
+
+<p>五、修改禅道的各权限下，用户预览到的界面</p>
+<pre><code>https://www.zentao.net/book/zentaopmshelp/257.html
+</code></pre>
+
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
